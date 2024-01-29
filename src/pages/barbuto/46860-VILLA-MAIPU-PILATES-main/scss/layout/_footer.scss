@@ -1,0 +1,58 @@
+footer{
+    background-color: $background-color;
+    width: 100%;
+    padding: .9375rem 1.875rem;
+    grid-area: footer;
+    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    .ubicacion{
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font-family;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2px;
+        padding: .625rem;
+        img{
+            padding: .9375rem;
+        }
+        p{
+            padding: .625rem;
+            color: $font-color;
+            text-decoration: none;
+        }
+    }
+    .title{
+        display: inline-block;
+        text-align: center;
+        font-family: $font-family;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2px;
+        padding: .625rem;
+    }
+    .contacto{
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font-family;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 5px;
+        padding: 10px;
+        .redes{
+            margin-top: 15px; 
+            line-height: .9375rem;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@media only screen and (min-width:768px) and (max-width:885px){
+    .main-nosotros{
+        height: auto;
+        .seccionPortada{
+            height: 100%;
+            img{
+                height: 25rem;
+            }
+        }
+        .seccionNosotros{
+            height: 100%;
+            padding: 10px;
+            img{
+                width: 30rem;
+                border-radius: 5px;
+                box-shadow: 7px 9px 17px 1px rgba(0,0,0,0.75);
+            }
+            p{
+                font-size: 1rem;
+                line-height: 1.5rem;
+                position: relative;
+            }
+        }
+        .seccionValores{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            div{
+                padding: 20px;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 7px 9px 17px 1px rgba(0,0,0,0.75);
+                h1{
+                    font-size: 1.5rem;
+                    text-align: center;
+                    padding-top: 1.2rem;
+                }
+                p{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

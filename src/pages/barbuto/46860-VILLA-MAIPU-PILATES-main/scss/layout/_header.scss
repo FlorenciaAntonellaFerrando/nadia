@@ -1,0 +1,62 @@
+header{
+    grid-area: header;
+    background-color: $background-color;
+    width: 100%;
+    padding: .9375rem 1.875rem;
+    @include flex (row, center, space-between);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    .logo{
+        img{
+        border-radius: 50%;
+        width: 4.6875rem;
+        height: 4.6875rem;
+        margin: .625rem;
+        }
+    }
+    nav{
+        background-color: $background-color;
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1rem;
+        padding: .3125rem;
+        justify-content: center;
+        align-items: center;
+        .menu{
+            .navbar{
+                list-style: none;
+                display: flex;
+                gap: 2rem;
+                li{
+                    width: 10rem;
+                    height: 2.5rem;
+                    display: inline-block;
+                    a{
+                        color: white;
+                        &:hover{
+                            color: $font-color;
+                        }
+                        text-decoration: none;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-family: $font-family;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 350;
+                        line-height: normal;
+                        letter-spacing: 1.5px;
+                        display: block;
+                        transition: .5%;
+                    }
+                }
+            }
+        }
+        #toggle, label{
+            display: none;
+        } 
+    }
+}

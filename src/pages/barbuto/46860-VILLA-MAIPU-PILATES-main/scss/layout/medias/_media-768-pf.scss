@@ -1,0 +1,34 @@
+@media (max-width: 768px){
+    .main-pf{
+        .bannerPreguntas{
+            height: 25rem;
+            h1{
+                font-size: 4.375rem;
+                font-weight: 700;
+                height: 25rem;
+                line-height: 5.625rem;
+            }
+        }
+        .seccionPreguntas{
+            height: 100%;
+            details{
+                width: 100%;
+                margin: 0px;
+                padding: 5px;
+                img{
+                    width: 28px;
+                }
+                summary{
+                    h2{
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                    }
+                    p{
+                        font-size: 1.25rem;
+                        line-height: 1.375rem;
+                    }
+                }
+            }
+        }
+    }
+}

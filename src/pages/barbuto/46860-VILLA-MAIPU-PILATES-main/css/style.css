@@ -1,0 +1,1263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .containerGrid {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10%, 1fr, 3%);
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: #0FAD94;
+  width: 100%;
+  padding: 0.9375rem 1.875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header .logo img {
+  border-radius: 50%;
+  width: 4.6875rem;
+  height: 4.6875rem;
+  margin: 0.625rem;
+}
+header nav {
+  background-color: #0FAD94;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+  padding: 0.3125rem;
+  justify-content: center;
+  align-items: center;
+}
+header nav .menu .navbar {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+header nav .menu .navbar li {
+  width: 10rem;
+  height: 2.5rem;
+  display: inline-block;
+}
+header nav .menu .navbar li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  display: block;
+  transition: 0.5%;
+}
+header nav .menu .navbar li a:hover {
+  color: black;
+}
+header nav #toggle, header nav label {
+  display: none;
+}
+
+.main-index {
+  background-color: rgba(15, 173, 148, 0.25);
+  width: 100%;
+  grid-area: main;
+  display: grid;
+  row-gap: 0.625rem;
+}
+.main-index .seccionPrincipal {
+  width: 100%;
+  height: 60rem;
+  position: relative;
+}
+.main-index .seccionPrincipal .background {
+  background-image: url("../assets/img/seccionPrincipal.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  padding: 0;
+  width: 100%;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .seccionPrincipal .background .portadaImg {
+  width: 80%;
+  height: 25rem;
+  margin: 60px 50px 60px 50px;
+  border: 5px solid black;
+  align-self: center;
+}
+.main-index .seccionPrincipal p {
+  background-color: #0FAD94;
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: oblique;
+  line-height: 2.5rem;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+  padding: 20px;
+  margin: 10px;
+}
+.main-index .pilates {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.main-index .pilates .imgPilates, .main-index .pilates .porque .imgPorque, .main-index .porque .pilates .imgPorque {
+  width: 37.5rem;
+  height: 25rem;
+  padding: 0.625rem;
+  margin: 20px;
+  float: left;
+}
+.main-index .pilates .parrafoPilates {
+  width: 37.5rem;
+  height: 23.75rem;
+  padding: 0.625rem;
+  margin: 20px;
+  align-items: center;
+  background-color: rgba(15, 173, 148, 0.9);
+  box-shadow: 7px 9px 17px 1px rgba(0, 0, 0, 0.75);
+  text-align: center;
+  position: relative;
+}
+.main-index .pilates .parrafoPilates h1 {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: oblique;
+  line-height: 2.5rem;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+}
+.main-index .pilates .parrafoPilates p {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-style: italic;
+  line-height: 1.875rem;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+}
+.main-index .porque {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.main-index .porque .parrafoPorque {
+  width: 40.625rem;
+  height: 26.875rem;
+  padding: 0.625rem;
+  margin: 20px;
+  align-items: center;
+  background-color: rgba(15, 173, 148, 0.9);
+  box-shadow: 7px 9px 17px 1px rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+.main-index .porque .parrafoPorque h2 {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: oblique;
+  line-height: 2.5rem;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+}
+.main-index .porque .parrafoPorque p {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-style: italic;
+  line-height: 1.875rem;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+}
+.main-index .porque .imgPorque {
+  padding: 10px;
+  margin-right: 60px;
+  width: 35rem;
+  height: 20rem;
+  padding: 5px;
+  margin-top: 40px;
+  align-items: start;
+}
+
+.main-nosotros {
+  background-color: rgba(15, 173, 148, 0.25);
+  width: 100%;
+  grid-area: main;
+  display: grid;
+  row-gap: 0.625rem;
+}
+.main-nosotros .seccionPortada {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-nosotros .seccionPortada img {
+  width: 100%;
+  height: 45rem;
+  object-fit: cover;
+}
+.main-nosotros .seccionNosotros {
+  width: 100%;
+  background-color: #0FAD94;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  box-shadow: 0px 4px 32px 3px rgba(0, 0, 0, 0.5);
+}
+.main-nosotros .seccionNosotros img {
+  width: 37.5rem;
+  margin: 5px;
+  margin-right: 0.938rem;
+  padding-top: 5px;
+  float: left;
+}
+.main-nosotros .seccionNosotros p {
+  padding-top: 0.625rem;
+  align-content: center;
+  margin: 15px;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-style: italic;
+  line-height: 1.875rem;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+}
+.main-nosotros .seccionValores {
+  width: 100%;
+  background-color: #0FAD94;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+.main-nosotros .seccionValores div {
+  width: 90%;
+  margin-left: 2.5rem;
+  margin-right: 0.9375rem;
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+.main-nosotros .seccionValores div h1 {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: oblique;
+  line-height: 2.5rem;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+}
+.main-nosotros .seccionValores div p {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-style: italic;
+  line-height: 1.875rem;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+}
+
+.main-instructora {
+  background-color: rgba(15, 173, 148, 0.25);
+  width: 100%;
+  grid-area: main;
+  display: grid;
+  row-gap: 0.625rem;
+}
+.main-instructora .seccionPortada {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-instructora .seccionPortada img {
+  width: 100%;
+  height: 45rem;
+  object-fit: cover;
+}
+.main-instructora .seccionInstructora {
+  width: 100%;
+  height: 900px;
+  background-color: rgba(15, 173, 148, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.main-instructora .seccionInstructora .container {
+  width: 100%;
+  margin: 0.625rem 0.625rem;
+  padding: 5px 5px;
+  box-shadow: 0px 4px 32px 3px rgba(0, 0, 0, 0.5);
+  align-content: center;
+}
+.main-instructora .seccionInstructora .container img {
+  width: 600px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 0.938rem;
+}
+.main-instructora .seccionInstructora .container p {
+  padding: 20px;
+  color: black;
+  text-align: center;
+  font-size: 1.9rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-style: italic;
+  line-height: 1.875rem;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+  position: relative;
+}
+
+.main-pf {
+  background-color: rgba(15, 173, 148, 0.25);
+  width: 100%;
+  height: 100%;
+  grid-area: main;
+  display: grid;
+  row-gap: 0.625rem;
+}
+.main-pf .bannerPreguntas {
+  background-image: url("../assets/img/seccionPrincipal 3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 75%;
+  padding: 0;
+  width: 100%;
+}
+.main-pf .bannerPreguntas h1 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 5px;
+  height: 31.25rem;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  line-height: 5rem;
+  text-shadow: 0 0 15px black;
+}
+.main-pf .seccionPreguntas {
+  background-color: rgba(15, 173, 148, 0.5);
+  width: 100%;
+  padding: 5px;
+}
+.main-pf .seccionPreguntas details {
+  width: 90%;
+  margin: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0.9375rem;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  box-shadow: 0px 4px 32px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.main-pf .seccionPreguntas details img {
+  float: right;
+}
+.main-pf .seccionPreguntas details summary {
+  list-style: none;
+}
+.main-pf .seccionPreguntas details summary h2 {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-style: oblique;
+  line-height: 2.5rem;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+  padding-top: 1.5625rem;
+  padding-bottom: 1.5625rem;
+}
+.main-pf .seccionPreguntas details p {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-style: italic;
+  line-height: 1.875rem;
+  letter-spacing: 0.3125rem;
+  word-spacing: 0.3125rem;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+}
+
+.main-ustedes {
+  background-color: rgba(15, 173, 148, 0.25);
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(16, auto);
+  row-gap: 0.625rem;
+  column-gap: 0.9375rem;
+}
+.main-ustedes .sectionPortada {
+  grid-column: 1/10;
+  grid-row: 1/2;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-ustedes .sectionPortada img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-ustedes .sectioncards-1, .main-ustedes .sectionvideo-4, .main-ustedes .sectionvideo-3, .main-ustedes .sectionvideo-2, .main-ustedes .sectionvideo-1, .main-ustedes .sectioncards-5, .main-ustedes .sectioncards-4, .main-ustedes .sectioncards-3, .main-ustedes .sectioncards-2 {
+  grid-column: 2/5;
+  grid-row: 3/5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main-ustedes .sectioncards-1 .card-1, .main-ustedes .sectionvideo-4 .card-1, .main-ustedes .sectionvideo-3 .card-1, .main-ustedes .sectionvideo-2 .card-1, .main-ustedes .sectionvideo-1 .card-1, .main-ustedes .sectioncards-5 .card-1, .main-ustedes .sectioncards-4 .card-1, .main-ustedes .sectioncards-3 .card-1, .main-ustedes .sectioncards-2 .card-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-ustedes .sectioncards-2 {
+  grid-column: 5/9;
+  grid-row: 3/5;
+}
+.main-ustedes .sectioncards-2 .card-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-ustedes .sectioncards-3 {
+  grid-column: 2/4;
+  grid-row: 5/7;
+}
+.main-ustedes .sectioncards-3 .card-3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-ustedes .sectioncards-4 {
+  grid-column: 4/9;
+  grid-row: 5/7;
+}
+.main-ustedes .sectioncards-4 .card-4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-ustedes .sectioncards-5 {
+  grid-column: 2/6;
+  grid-row: 7/10;
+}
+.main-ustedes .sectioncards-5 .card-5 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-ustedes .sectionvideo-1 {
+  grid-column: 6/9;
+  grid-row: 7/13;
+}
+.main-ustedes .sectionvideo-1 .video-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-ustedes .sectionvideo-2 {
+  grid-column: 2/5;
+  grid-row: 13/16;
+}
+.main-ustedes .sectionvideo-2 .video-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-ustedes .sectionvideo-3 {
+  grid-column: 5/9;
+  grid-row: 13/16;
+}
+.main-ustedes .sectionvideo-3 .video-3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-ustedes .sectionvideo-4 {
+  grid-column: 2/6;
+  grid-row: 10/13;
+}
+.main-ustedes .sectionvideo-4 .video-4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #0FAD94;
+  width: 100%;
+  padding: 0.9375rem 1.875rem;
+  grid-area: footer;
+  display: grid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+footer .ubicacion {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  padding: 0.625rem;
+}
+footer .ubicacion img {
+  padding: 0.9375rem;
+}
+footer .ubicacion p {
+  padding: 0.625rem;
+  color: black;
+  text-decoration: none;
+}
+footer .title {
+  display: inline-block;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  padding: 0.625rem;
+}
+footer .contacto {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5px;
+  padding: 10px;
+}
+footer .contacto .redes {
+  margin-top: 15px;
+  line-height: 0.9375rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  header nav .menu .navbar {
+    gap: 1.5rem;
+  }
+  header nav .menu .navbar li {
+    width: 8rem;
+  }
+  header nav .menu .navbar li a {
+    font-size: 14px;
+    font-weight: 325;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+  .main-index .seccionPrincipal {
+    margin-bottom: 40px;
+  }
+  .main-index .pilates {
+    flex-direction: column;
+  }
+  .main-index .pilates .imgPilates, .main-index .pilates .porque .imgPorque, .main-index .porque .pilates .imgPorque {
+    margin: 0;
+  }
+  .main-index .porque {
+    flex-direction: column;
+  }
+  .main-index .porque .imgPorque {
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .main-pf .seccionPreguntas details summary h2 {
+    font-size: 1.75rem;
+    line-height: 1.875rem;
+  }
+  .main-pf .seccionPreguntas details summary p {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1100px) {
+  .main-instructora .seccionInstructora {
+    height: 100%;
+  }
+  .main-instructora .seccionInstructora .container {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 560px) and (max-width: 800px) {
+  .main-instructora .seccionPortada {
+    height: 100%;
+  }
+  .main-instructora .seccionPortada img {
+    height: 25rem;
+  }
+  .main-instructora .seccionInstructora {
+    height: 100%;
+    padding: 10px;
+  }
+  .main-instructora .seccionInstructora .container {
+    text-align: center;
+  }
+  .main-instructora .seccionInstructora .container img {
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+    float: none;
+  }
+  .main-instructora .seccionInstructora .container p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .main-index .seccionPrincipal {
+    height: 100%;
+  }
+  .main-index .seccionPrincipal .background {
+    height: 25rem;
+  }
+  .main-index .seccionPrincipal .background .portadaImg {
+    height: 15rem;
+  }
+  .main-index .seccionPrincipal p {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .main-index .pilates {
+    flex-direction: column;
+  }
+  .main-index .porque {
+    flex-direction: column;
+  }
+  .main-index .imgPorque {
+    margin: 40px 60px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 885px) {
+  .main-nosotros {
+    height: auto;
+  }
+  .main-nosotros .seccionPortada {
+    height: 100%;
+  }
+  .main-nosotros .seccionPortada img {
+    height: 25rem;
+  }
+  .main-nosotros .seccionNosotros {
+    height: 100%;
+    padding: 10px;
+  }
+  .main-nosotros .seccionNosotros img {
+    width: 30rem;
+    border-radius: 5px;
+    box-shadow: 7px 9px 17px 1px rgba(0, 0, 0, 0.75);
+  }
+  .main-nosotros .seccionNosotros p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    position: relative;
+  }
+  .main-nosotros .seccionValores {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .main-nosotros .seccionValores div {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 7px 9px 17px 1px rgba(0, 0, 0, 0.75);
+  }
+  .main-nosotros .seccionValores div h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1.2rem;
+  }
+  .main-nosotros .seccionValores div p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 560px) and (max-width: 767px) {
+  .main-index .seccionPrincipal {
+    width: 100vw;
+    height: 100%;
+  }
+  .main-index .seccionPrincipal .background {
+    height: 20rem;
+  }
+  .main-index .seccionPrincipal .background .portadaImg {
+    height: 15rem;
+  }
+  .main-index .seccionPrincipal p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 10px;
+  }
+  .main-index .pilates {
+    flex-direction: column;
+  }
+  .main-index .pilates .imgPilates, .main-index .pilates .porque .imgPorque, .main-index .porque .pilates .imgPorque {
+    width: auto;
+    height: 20rem;
+    margin: 0;
+    float: none;
+    text-align: center;
+  }
+  .main-index .pilates .parrafoPilates {
+    width: 30rem;
+    height: 18rem;
+    margin: 0;
+  }
+  .main-index .pilates .parrafoPilates h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .main-index .pilates .parrafoPilates p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .main-index .porque {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .main-index .porque .parrafoPorque {
+    width: 30rem;
+    height: 23rem;
+    margin: 0;
+  }
+  .main-index .porque .parrafoPorque h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .main-index .porque .parrafoPorque p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .main-index .porque .imgPorque {
+    width: 32rem;
+    height: 18rem;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin: 10px;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 560px) and (max-width: 768px) {
+  .main-nosotros {
+    height: auto;
+  }
+  .main-nosotros .seccionPortada {
+    height: 100%;
+  }
+  .main-nosotros .seccionPortada img {
+    height: 20rem;
+  }
+  .main-nosotros .seccionNosotros {
+    height: 100%;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-nosotros .seccionNosotros img {
+    width: 20rem;
+    margin-right: 0;
+    float: none;
+  }
+  .main-nosotros .seccionNosotros p {
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .main-nosotros .seccionValores {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    place-items: center;
+  }
+  .main-nosotros .seccionValores div {
+    width: 80%;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 7px 9px 17px 1px rgba(0, 0, 0, 0.75);
+  }
+  .main-nosotros .seccionValores div h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1.2rem;
+  }
+  .main-nosotros .seccionValores div p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .main-pf .bannerPreguntas {
+    height: 25rem;
+  }
+  .main-pf .bannerPreguntas h1 {
+    font-size: 4.375rem;
+    font-weight: 700;
+    height: 25rem;
+    line-height: 5.625rem;
+  }
+  .main-pf .seccionPreguntas {
+    height: 100%;
+  }
+  .main-pf .seccionPreguntas details {
+    width: 100%;
+    margin: 0px;
+    padding: 5px;
+  }
+  .main-pf .seccionPreguntas details img {
+    width: 28px;
+  }
+  .main-pf .seccionPreguntas details summary h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .main-pf .seccionPreguntas details summary p {
+    font-size: 1.25rem;
+    line-height: 1.375rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 559px) {
+  .main-index .seccionPrincipal {
+    width: 100vw;
+    height: 100%;
+  }
+  .main-index .seccionPrincipal .background {
+    height: 20rem;
+  }
+  .main-index .seccionPrincipal .background .portadaImg {
+    width: 90%;
+    height: 15rem;
+    margin: 20px;
+  }
+  .main-index .seccionPrincipal p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 5px;
+  }
+  .main-index .pilates {
+    flex-direction: column;
+  }
+  .main-index .pilates .imgPilates, .main-index .pilates .porque .imgPorque, .main-index .porque .pilates .imgPorque {
+    width: auto;
+    height: 15rem;
+    margin: 0;
+    float: none;
+    text-align: center;
+  }
+  .main-index .pilates .parrafoPilates {
+    width: 20rem;
+    height: 16rem;
+    margin: 0;
+  }
+  .main-index .pilates .parrafoPilates h1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .main-index .pilates .parrafoPilates p {
+    font-size: 0.95rem;
+    line-height: 1rem;
+  }
+  .main-index .porque {
+    flex-direction: column;
+    padding-top: 20px;
+    padding: 5px;
+  }
+  .main-index .porque .parrafoPorque {
+    width: 20rem;
+    height: 25rem;
+    margin: 0;
+  }
+  .main-index .porque .parrafoPorque h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .main-index .porque .parrafoPorque p {
+    font-size: 0.95rem;
+    line-height: 1rem;
+  }
+  .main-index .porque .imgPorque {
+    width: 20rem;
+    height: 12rem;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin: 5px;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 560px) {
+  .main-nosotros {
+    height: auto;
+  }
+  .main-nosotros .seccionPortada {
+    height: 100%;
+  }
+  .main-nosotros .seccionPortada img {
+    height: 16rem;
+  }
+  .main-nosotros .seccionNosotros {
+    height: 100%;
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-nosotros .seccionNosotros img {
+    width: 20rem;
+    margin-right: 0;
+    float: none;
+  }
+  .main-nosotros .seccionNosotros p {
+    padding: 0;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  .main-nosotros .seccionValores {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    place-items: center;
+  }
+  .main-nosotros .seccionValores div {
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+  }
+  .main-nosotros .seccionValores div h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 1.2rem;
+  }
+  .main-nosotros .seccionValores div p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 560px) {
+  .main-instructora .seccionInstructora .seccionPortada {
+    height: auto;
+  }
+  .main-instructora .seccionInstructora .seccionPortada img {
+    height: 16rem;
+  }
+  .main-instructora .seccionInstructora .container {
+    height: auto;
+    text-align: center;
+  }
+  .main-instructora .seccionInstructora .container img {
+    width: 290px;
+    float: none;
+  }
+  .main-instructora .seccionInstructora .container p {
+    padding-top: 0.375rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 525px) {
+  .main-pf .bannerPreguntas {
+    height: 18.75rem;
+  }
+  .main-pf .bannerPreguntas h1 {
+    font-size: 2.8125rem;
+    font-weight: 600;
+    line-height: 4.375rem;
+    height: 18.75rem;
+    padding-top: 4.6875rem;
+    padding-bottom: 4.6875rem;
+  }
+  .main-pf .seccionPreguntas details summary h2 {
+    letter-spacing: 0.156rem;
+    word-spacing: 0.156rem;
+  }
+  .main-pf .seccionPreguntas details summary p {
+    font-size: 1rem;
+    letter-spacing: 0.156rem;
+    word-spacing: 0.156rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header .logo {
+    align-items: center;
+  }
+  header nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  header nav .menu .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+    gap: 1rem;
+  }
+  header nav .menu .navbar li a {
+    font-size: 12px;
+    font-weight: 300;
+  }
+  header nav label {
+    display: inline-flex;
+    color: black;
+    cursor: pointer;
+  }
+  header nav #toggle:checked ~ .menu {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .main-index .seccionPrincipal {
+    width: 100vw;
+    height: 100%;
+  }
+  .main-index .seccionPrincipal .background {
+    height: 20rem;
+  }
+  .main-index .seccionPrincipal .background .portadaImg {
+    width: 90%;
+    height: 15rem;
+    margin: 20px;
+  }
+  .main-index .seccionPrincipal p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 5px;
+  }
+  .main-index .pilates {
+    flex-direction: column;
+  }
+  .main-index .pilates .imgPilates, .main-index .pilates .porque .imgPorque, .main-index .porque .pilates .imgPorque {
+    width: 18rem;
+    height: 15rem;
+    margin: 0;
+    float: none;
+    text-align: center;
+  }
+  .main-index .pilates .parrafoPilates {
+    width: 18rem;
+    height: 14rem;
+    margin: 0;
+  }
+  .main-index .pilates .parrafoPilates h1 {
+    font-size: 0.95rem;
+    line-height: 1rem;
+  }
+  .main-index .pilates .parrafoPilates p {
+    font-size: 0.85rem;
+    line-height: 0.9rem;
+  }
+  .main-index .porque {
+    flex-direction: column;
+    padding-top: 20px;
+    padding: 5px;
+  }
+  .main-index .porque .parrafoPorque {
+    width: 18rem;
+    height: 22rem;
+    margin: 0;
+  }
+  .main-index .porque .parrafoPorque h2 {
+    font-size: 0.95rem;
+    line-height: 1rem;
+  }
+  .main-index .porque .parrafoPorque p {
+    font-size: 0.85rem;
+    line-height: 0.9rem;
+  }
+  .main-index .porque .imgPorque {
+    width: 18rem;
+    height: 12rem;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin: 5px;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .main-nosotros .seccionPortada {
+    height: auto;
+  }
+  .main-nosotros .seccionPortada img {
+    height: 15rem;
+  }
+  .main-nosotros .seccionNosotros {
+    height: auto;
+    padding: 5px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-nosotros .seccionNosotros img {
+    width: 10rem;
+    margin-right: 0;
+    float: none;
+  }
+  .main-nosotros .seccionNosotros p {
+    padding: 0;
+    font-size: 0.85rem;
+    line-height: 1rem;
+  }
+  .main-nosotros .seccionValores {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: grid;
+    place-items: center;
+  }
+  .main-nosotros .seccionValores div {
+    width: 100%;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+  }
+  .main-nosotros .seccionValores div h1 {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .main-nosotros .seccionValores div p {
+    font-size: 0.85rem;
+    line-height: 1rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .main-instructora .seccionPortada {
+    height: auto;
+  }
+  .main-instructora .seccionPortada img {
+    height: 15rem;
+  }
+  .main-instructora .seccionInstructora {
+    height: auto;
+    padding: 5px;
+    text-align: center;
+  }
+  .main-instructora .seccionInstructora .container img {
+    width: 200px;
+    margin: 5px;
+    float: none;
+  }
+  .main-instructora .seccionInstructora .container p {
+    padding-top: 0;
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 375px) {
+  .main-pf .bannerPreguntas h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .main-pf .bannerPreguntas h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding: 0.9375rem;
+  }
+  footer .ubicacion {
+    padding: 5px;
+    font-weight: 300;
+  }
+  footer .title {
+    margin: 10px;
+  }
+  footer .contacto {
+    padding: 5px;
+    font-weight: 300;
+    margin: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

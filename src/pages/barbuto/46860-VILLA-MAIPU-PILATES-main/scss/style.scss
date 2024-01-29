@@ -1,0 +1,74 @@
+@import "./utilities/variables";
+
+@import "./utilities/mixins";
+
+@import "./base/reset";
+
+@import "./layout/body";
+
+@import "./layout/header";
+
+@import "./layout/main-index";
+
+@import "./layout/main-nosotros";
+
+@import "./layout/main-instructora";
+
+@import "./layout/main-pf";
+
+@import "./layout/main-ustedes";
+
+@import "./layout/footer"; 
+
+@import "./layout/medias/media-header-min768-max1180";
+
+@import "./layout/medias/media-min1024-max1300-index";
+
+@import "./layout/medias/media-1024-pf";
+
+@import "./layout/medias/media-1100-instructora";
+
+@import "./layout/medias/media-min560-max800-instructora";
+
+@import "./layout/medias/media-min768-max1023-index";
+
+@import "./layout/medias/media-min768-max885-nosotros";
+
+@import "./layout/medias/media-min560-max767-index";
+
+@import "./layout/medias/media-min560-max768-nosotros";
+
+@import "./layout/medias/media-768-pf";
+
+@import "./layout/medias/media-min375-max559-index";
+
+@import "./layout/medias/media-min375-max560-nosotros";
+
+@import "./layout/medias/media-min375-max560-instructora";
+
+@import "./layout/medias/media-min375-max525-pf";
+
+@import "./layout/medias/media-header-min320-max768";
+
+@import "./layout/medias/media-min320-max374-index";
+
+@import "./layout/medias/media-min320-max375-nosotros";
+
+@import "./layout/medias/media-min320-max375-instructora";
+
+@import "./layout/medias/media-375-pf";
+
+@import "./layout/medias/media-320-pf";
+
+@import "./layout/medias/media-footer-min320-max768";
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+@media only screen and (min-width:320px) and (max-width:375px){
+    .main-instructora{
+        .seccionPortada{
+            height: auto;
+            img{
+                height: 15rem;
+            }
+        }
+        .seccionInstructora{
+            height: auto;
+            padding: 5px;
+            text-align: center;
+            .container{
+                img{
+                    width: 200px;
+                    margin: 5px;
+                    float: none;
+                }
+                p{
+                    padding-top: 0;
+                    font-size: .85rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@media only screen and (min-width:320px) and (max-width:374px){
+    .main-index{
+        .seccionPrincipal{
+            width: 100vw;
+            height: 100%;
+            .background{
+                height: 20rem;
+                .portadaImg{
+                    width: 90%;
+                    height: 15rem;
+                    margin: 20px;
+                }
+            }
+            p{
+                font-size: 1rem;
+                line-height: 1.5rem;
+                padding: 5px;
+            }
+        }
+        .pilates{
+            flex-direction: column;
+            .imgPilates{
+                width: 18rem;
+                height: 15rem;
+                margin: 0;
+                float: none;
+                text-align: center;
+            }
+            .parrafoPilates{
+                width: 18rem;
+                height: 14rem;
+                margin: 0;
+                h1{
+                    font-size: .95rem;
+                    line-height: 1rem;
+                }
+                p{
+                    font-size: .85rem;
+                    line-height: .90rem;
+                }
+            }
+        }
+        .porque{
+            flex-direction: column;
+            padding-top: 20px;
+            padding: 5px;
+            .parrafoPorque{
+                width: 18rem;
+                height: 22rem;
+                margin: 0;
+                h2{
+                    font-size: .95rem;
+                    line-height: 1rem;
+                }
+                p{
+                    font-size: .85rem;
+                    line-height: .90rem;
+                }
+            }
+            .imgPorque{
+                width: 18rem;
+                height: 12rem;
+                margin-right: 5px;
+                margin-top: 5px;
+                margin: 5px;
+                align-items: center;
+            }
+        }
+    }
+}

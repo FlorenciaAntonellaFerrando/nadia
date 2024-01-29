@@ -1,0 +1,20 @@
+@media only screen and (min-width:768px) and (max-width:1180px){
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+        nav{
+            .menu{
+                .navbar{
+                    gap: 1.5rem;
+                    li{
+                        width: 8rem;
+                        a{
+                            font-size: 14px;
+                            font-weight: 325;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@media only screen and (min-width:1024px) and (max-width:1300px){
+    .main-index{
+        .seccionPrincipal{
+            margin-bottom: 40px;
+        }
+        .pilates{
+            flex-direction: column;
+            .imgPilates{
+                margin: 0;
+            }
+        }
+        .porque{
+            flex-direction: column;
+            .imgPorque{
+            margin-top: 0;
+            margin-right: 0;
+            }
+        }
+    }
+}
+
+
+

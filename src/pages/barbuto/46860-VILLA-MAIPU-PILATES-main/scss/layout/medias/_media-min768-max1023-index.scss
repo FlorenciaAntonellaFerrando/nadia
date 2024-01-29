@@ -1,0 +1,26 @@
+@media only screen and (min-width:768px) and (max-width:1023px){
+    .main-index{
+        .seccionPrincipal{
+            height: 100%;
+            .background{
+                height: 25rem;
+                .portadaImg{
+                    height: 15rem;
+                }
+            }
+            p{
+                font-size: 1.5rem;
+                padding: 10px;
+            }
+            }
+        .pilates{
+            flex-direction: column;
+        }
+        .porque{
+            flex-direction: column;
+        }
+        .imgPorque{
+            margin: 40px 60px;
+        }
+    }
+}

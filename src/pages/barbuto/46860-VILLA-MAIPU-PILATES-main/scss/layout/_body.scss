@@ -1,0 +1,7 @@
+body{
+    .containerGrid{
+        width: 100%;
+        height: 100vh;
+        @include grid (repeat(3, 1fr), repeat(10%, 1fr, 3%), "header header header" "main main main" "footer footer footer");
+    }
+}
